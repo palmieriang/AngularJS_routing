@@ -1,0 +1,7 @@
+<h1>Courses we offer</h1>
+<input type="text" ng-model="courseName">
+<ul>
+    <li ng-repeat="course in courses | filter: courseName">
+        {{course}}
+    </li>
+</ul>
